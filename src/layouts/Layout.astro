@@ -8,14 +8,14 @@ interface Props {
 }
 
 const {
-    title,
+    title = "nabtang.cc",
     description = "A demo blog and the rest of the description here",
     image = "/images/band.jpg",
 } = Astro.props
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="th">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
