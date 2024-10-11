@@ -1,0 +1,5 @@
+# security.txt
+# Information for reporting security vulnerabilities.
+
+Contact: mailto:hello@nabtang.cc
+Preferred-Languages: en, th
