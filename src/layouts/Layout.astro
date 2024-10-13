@@ -11,7 +11,7 @@ interface Props {
 const {
     title,
     description = "เว็บไซต์นำเสนอพอร์ตโฟลิโอออนไลน์ (Online Portfolio) นำเสนอผลงานด้านวิศวกรรมศาสตร์และคอมพิวเตอร์ สำหรับยื่นพอร์ตเข้ามหาลัยคณะวิศวกรรมศาสตร์ TCAS Dek68",
-    image = "/images/band.jpg",
+    image = "/logo/nabtang-cc.svg",
 } = Astro.props
 ---
 
@@ -24,6 +24,7 @@ const {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta property="og:image" content={image} />
+		<meta property="og:description" content={description} />
 		<title>{title}</title>
 	</head>
 	<body class="min-h-screen max-w-screen-xl mx-auto">
