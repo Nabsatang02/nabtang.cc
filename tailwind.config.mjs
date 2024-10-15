@@ -2,7 +2,13 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {  typography: {
+			DEFAULT: {
+			  css: {
+				maxWidth: '1200px', // Set your desired max width here
+			  },
+			},
+		  },},
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
