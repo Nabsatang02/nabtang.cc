@@ -36,7 +36,18 @@ import Layout from '../layouts/Layout.astro';
             โครงงานของผมเองทำเกี่ยวกับการประกอบ <strong>แขนกลสำหรับติดตามดาวเทียมกิจการวิทยุสมัครเล่น</strong> ที่จะทำหน้าที่ติดตามดาวเทียม
             ที่โคจรเข้ามาในน่านฟ้าประเทศไทย รวมถึงการทดสอบประสิทธิภาพของแขนกลดังกล่าว ให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
         </p>
-
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/NNtLvRwBU8A?si=GEkDEPYENAvl7-Ap" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">แนะนำหลักการทำงานของแขนกลเบื้องต้น</figcaption>
+        </figure>
         <!-- Buttons -->
         <div class="flex space-x-8">
             <!-- Left Column with Buttons -->
@@ -51,26 +62,68 @@ import Layout from '../layouts/Layout.astro';
               </a>
             </div>
           </div>
-          <!-- <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-1.png" alt="รูปรวม" width={500} height={300} />
-            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure> -->
 
         <h3>ที่มาของโครงงาน</h3>
         <p>
-            ในปัจจุบันประเทศไทยกำลังเร่งพัฒนาอุตสาหกรรมอวกาศ และได้เข้าสู่ยุค New Space คือ พื้นที่ในอวกาศเป็นคล้ายสนามเด็กเล่น ไม่เพียงเปิดกว้างแต่องค์กรใหญ่ๆ หรือเอกชนรายใหญ่เท่านั้นในปัจจุบัน สถานศึกษาต่างๆ บริษัทเอกชนรายย่อยและสตาร์ทอัพรายใหม่ๆ ก็สามารถก้าวไปสู่การพัฒนาเทคโนโลยีใหม่ๆไปด้วยเช่นกัน ตัวอย่างเช่น ดาวเทียมไทยโชต - ดาวเทียมสำรวจทรัพยากรธรรมชาติที่ดำเนินงานโดย สำนักงานพัฒนาเทคโนโลยีอวกาศและภูมิสารสนเทศ (GISDA), JAISAT - ดาวเทียมวิทยุสมัครเล่น , KNACKSAT1, KNACKSAT2 - พัฒนาโดยมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (KMUTNB)  และได้ถูกส่งเข้าสู่วงโคจรเรียบร้อยแล้ว ในขณะที่ข้าพเจ้ากำลังเขียนรายงานฉบับนี้อยู่นั้น ทางมหาลัยดังกล่าวก็กำลังพัฒนาดาวเทียมขนาดเล็กดวงใหม่ที่มีชื่อว่า KNACKSAT3 อยู่เช่นกัน 
+            เนื่องจากแขนกลสำหรับติดตามดาวเทียมวิทยุสมัครเล่นยังไม่เป็นที่แพร่หลายในประเทศไทย 
+            และมีราคาสูงเมื่อใช้งานแขนกลที่ออกแบบสำหรับการใช้งานเชิงพาณิชย์ 
+            ทำให้นักวิทยุสมัครเล่นที่ต้องการติดต่อกับดาวเทียมต้องถือสายอากาศทิศทางที่มีน้ำหนักมาก 
+            และต้องชี้สายอากาศไปยังดาวเทียมด้วยตนเอง ซึ่งทำให้การติดต่อกับดาวเทียมวงโคจรต่ำมีความยากลำบาก 
+            เนื่องจากดาวเทียมมีความเร็วสูงเมื่อเปรียบเทียบกับดาวเทียมในวงโคจรสูง ทำให้การติดตามดาวเทียมด้วยมือมีความแม่นยำต่ำ 
+            ด้วยเหตุนี้ ผมจึงมีความตั้งใจที่จะพัฒนาโครงงานที่คล้ายกันนี้ให้สามารถประกอบขึ้นได้เองในบ้าน ด้วยต้นทุนที่ถูกลง 
+            ลดการนำเข้าอุปกรณ์จากต่างประเทศ สามารถพกพาได้สะดวก และเพิ่มประสิทธิภาพให้ตรงตามเกณฑ์ที่ตั้งไว้ เพื่อให้นำไปใช้งานได้จริง
         </p>
-        <p>
-            จากตัวอย่างทั้งหมดนี้จำเป็นจะต้องมีหลายหลายฝ่ายที่จะต้องมีทีมงานดูแล หน่วยที่มีความจำเป็นและขาดไม่ได้เลยคือ หน่วยภาคพื้นดิน (Ground Station) ที่จะต้องคอยทำหน้าที่ติดดาวเทียมและรับ-ส่งสัญญาณ  ส่งชุดคำสั่งให้ดาวเทียมทำภาระกิจใดๆ ตรวจสอบสถานะดาวเทียม และรับสัญญาณเพื่อนำข้อมูลมาวิเคราะห์และใช้งานต่อไป ซึ่งข้าพเจ้ามีความสนใจพัฒนาแขนกลขนาดเล็กที่ใช้ในการติดตามดาวเทียมโดยอัตโนมัตินี้ขึ้น เพื่อเป็นการอำนวยความสะดวกทำให้การทำงานง่ายขึ้น รวมถึงการระบุทิศทาง และตำแหน่งของดาวเทียมที่ติดตามได้ถูกต้องแม่นยำทดแทนการใช้คน ซึ่งการประดิษฐ์นี้ สามารถใช้ทั้งในกิจการวิทยุสมัครเล่น อุตสาหกรรมอวกาศและกิจกรรมอื่นๆต่อไป
-        </p>
-        <p>
-            เนื่องจากแขนกลสำหรับติดตามดาวเทียม ยังมีไม่แพร่หลายนัก รวมถึงยังมีราคาที่สูงเมื่อใช้งานแขนกลที่ออกแบบสำหรับใช้งานในเชิงพาณิชย์ การการติดต่อดาวเทียมผ่านการถือสายอากาศทิศทาง และชี้ไปยังดาวเทียมที่ต้องการติดต่อด้วยตนเอง ทำให้การติดต่อสื่อสารผ่านทางดาวเทียมวงโคจรต่ำ นั้นเป็นไปด้วยความยากลำบาก เนื่องจากความเร็วในการเคลื่อนที่ผ่านน่านฟ้าของดาวเทียมมีอัตราที่สูงเมื่อเปรียบเทียบกับดาวเทียมวงโคจรสูง ทำให้ความแม่นยำในการติดตามดาวเทียมด้วยมือต่ำ ข้าพเจ้าจึงต้องการที่จะนำเอาโครงงานที่คล้ายกันมาพัฒนาต่อให้สามารถประกอบขึ้นเองได้ที่บ้านในราคาที่ถูกลง ลดการนำเข้าจากต่างประเทศ พกพาได้สะดวก รวมถึงมีประสิทธิภาพที่สูงขึ้นตามเกณฑ์ที่ข้าพเจ้าตั้งและสามารถนำไปใช้งานจริงได้อีกด้วย 
-        </p>
-        <figure>
-            <Image src="/images/jstp/JSTP-02-768x432.jpg" alt="รูปรวม" width={500} height={300} />
-            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <figure>
+              <Image src="/images/jstp/jstp-antenna-rotator-1.jpg" alt="รูปรวม" width={300} height={150} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+            </figure>
+            
+            <figure>
+              <Image src="/images/jstp/jstp-antenna-rotator-5.jpg" alt="รูปรวม" width={300} height={150} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+            </figure>
+          </div>          
+
+
+        <h3>การทดสอบแขนกล</h3>
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Elevation ของแขนกล</figcaption>
         </figure>
-        <h3>หลักการทำงานของแขนกล</h3>
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Azimuth ของแขนกล</figcaption>
+        </figure>  
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/AWzMFxUn6Ek?si=CTutOGwMlkcxRghM" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น</figcaption>
+        </figure>
+
         <h3>นักวิทยาศาสตร์พี่เลี้ยง</h3>
 
         <figure>
@@ -156,5 +209,22 @@ import Layout from '../layouts/Layout.astro';
             <Image src="/images/jstp/jstp-activity-3.jpg" alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%</figcaption>
         </figure>
+        
+        <figure class="max-w-[500px] w-full">
+            <div class="relative" style="padding-top: 56.25%;"> <!-- 16:9 aspect ratio -->
+            <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="placeholder" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+            </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+        </figure>
     </div>
+
+      
+      
+
 </Layout>
