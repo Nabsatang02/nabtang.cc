@@ -36,7 +36,18 @@ import Layout from '../layouts/Layout.astro';
             โครงงานของผมเองทำเกี่ยวกับการประกอบ <strong>แขนกลสำหรับติดตามดาวเทียมกิจการวิทยุสมัครเล่น</strong> ที่จะทำหน้าที่ติดตามดาวเทียม
             ที่โคจรเข้ามาในน่านฟ้าประเทศไทย รวมถึงการทดสอบประสิทธิภาพของแขนกลดังกล่าว ให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
         </p>
-
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/NNtLvRwBU8A?si=GEkDEPYENAvl7-Ap" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">แนะนำหลักการทำงานของแขนกลเบื้องต้น</figcaption>
+        </figure>
         <!-- Buttons -->
         <div class="flex space-x-8">
             <!-- Left Column with Buttons -->
@@ -51,10 +62,6 @@ import Layout from '../layouts/Layout.astro';
               </a>
             </div>
           </div>
-          <!-- <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-1.png" alt="รูปรวม" width={500} height={300} />
-            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure> -->
 
         <h3>ที่มาของโครงงาน</h3>
         <p>
@@ -66,11 +73,57 @@ import Layout from '../layouts/Layout.astro';
             ด้วยเหตุนี้ ผมจึงมีความตั้งใจที่จะพัฒนาโครงงานที่คล้ายกันนี้ให้สามารถประกอบขึ้นได้เองในบ้าน ด้วยต้นทุนที่ถูกลง 
             ลดการนำเข้าอุปกรณ์จากต่างประเทศ สามารถพกพาได้สะดวก และเพิ่มประสิทธิภาพให้ตรงตามเกณฑ์ที่ตั้งไว้ เพื่อให้นำไปใช้งานได้จริง
         </p>
-        <figure>
-            <Image src="/images/jstp/JSTP-02-768x432.jpg" alt="รูปรวม" width={500} height={300} />
-            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <figure>
+              <Image src="/images/jstp/jstp-antenna-rotator-1.jpg" alt="รูปรวม" width={300} height={150} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+            </figure>
+            
+            <figure>
+              <Image src="/images/jstp/jstp-antenna-rotator-5.jpg" alt="รูปรวม" width={300} height={150} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+            </figure>
+          </div>          
+
+
+        <h3>การทดสอบแขนกล</h3>
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Elevation ของแขนกล</figcaption>
         </figure>
-        <h3>หลักการทำงานของแขนกล</h3>
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Azimuth ของแขนกล</figcaption>
+        </figure>  
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/AWzMFxUn6Ek?si=CTutOGwMlkcxRghM" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น</figcaption>
+        </figure>
+
         <h3>นักวิทยาศาสตร์พี่เลี้ยง</h3>
 
         <figure>
@@ -156,5 +209,22 @@ import Layout from '../layouts/Layout.astro';
             <Image src="/images/jstp/jstp-activity-3.jpg" alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%</figcaption>
         </figure>
+        
+        <figure class="max-w-[500px] w-full">
+            <div class="relative" style="padding-top: 56.25%;"> <!-- 16:9 aspect ratio -->
+            <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="placeholder" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+            </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+        </figure>
     </div>
+
+      
+      
+
 </Layout>
