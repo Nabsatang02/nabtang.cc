@@ -76,17 +76,26 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <figure>
               <Image src="/images/jstp/jstp-antenna-rotator-1.jpg" alt="รูปรวม" width={300} height={150} />
-              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+              <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (1)</figcaption>
             </figure>
             
             <figure>
               <Image src="/images/jstp/jstp-antenna-rotator-5.jpg" alt="รูปรวม" width={300} height={150} />
-              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+              <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (2)</figcaption>
             </figure>
           </div>          
 
 
         <h3>การทดสอบแขนกล</h3>
+        <p>
+            สำหรับการทดสอบแขนกลที่ผมได้ประกอบขึ้นมาในโครงงานนี้ จะมีอยู่ 4 การทดสอบด้วยกัน ได้แก่:
+            <li><strong>การทดสอบการเคลื่อนที่จากตำแหน่งปัจจุบันไปยังตำแหน่งเริ่มต้น</strong>ได้ถูกต้องแม่นยำ  ได้ทำการสั่งให้แขนกลเคลื่อนที่จากตำแหน่งปัจจุบันไปยังตำแหน่งเริ่มต้น เปรียบเทียบกับค่าที่วัดได้ และหาค่าเฉลี่ยจากการทดลองทั้งหมด 50 รอบ </li>
+            <li><strong>การทดสอบโดยเริ่มจากตำแหน่งสุ่มไปยังตำแหน่งที่ต้องการ</strong> โดยเริ่มจากตำแหน่งที่สุ่มเอาไว้ เปรียบเทียบกับค่าที่วัดได้ และหาค่าเฉลี่ยจากการทดลองทั้งหมด 20 รอบ</li>
+            <li><strong>การทดสอบวัดแรงดึงที่แขนกลสามารถทำได้</strong> โดยกำหนดให้ตำแหน่งวัด ห่างจากจุดหมุน ระยะ 1 เมตร จากนั้นจึงเพิ่มน้ำหนักขึ้นครั้งละ 0.5 กิโลกรัม และทำการบันทึกผล</li>
+            <li><strong>การทดสอบนำไปใช้งานจริงและอ่านค่าสัญญาณที่ได้รับจากดาวเทียม</strong> โดยนำแขนกลไปติดตั้งใช้งานจริง และวัดระดับสัญญาณจากดาวเทียม แล้วบันทึกค่าที่ได้รับ</li>
+        </p>
+
+        <h3>การทดสอบโดยเริ่มจากตำแหน่งสุ่มไปยังตำแหน่งที่ต้องการ</h3>
         <figure class="max-w-[260px] w-full">
             <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
               <iframe class="absolute top-0 left-0 w-full h-full" 
@@ -110,7 +119,10 @@ import Layout from '../layouts/Layout.astro';
               </iframe>
             </div>
             <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Azimuth ของแขนกล</figcaption>
-        </figure>  
+        </figure>
+
+        <h3>การทดสอบวัดแรงดึงที่แขนกลสามารถทำได้</h3>
+        <h3>home position test</h3>
         <figure class="max-w-[260px] w-full">
             <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
               <iframe class="absolute top-0 left-0 w-full h-full" 
@@ -124,10 +136,24 @@ import Layout from '../layouts/Layout.astro';
             <figcaption class="mt-2 text-sm text-gray-600">สาธิตการทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น</figcaption>
         </figure>
 
+        <h3>การทดสอบนำไปใช้งานจริงและอ่านค่าสัญญาณที่ได้รับจากดาวเทียม</h3>
+        <figure class="max-w-[260px] w-full">
+            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+              <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/kdDQrZkj9gA?si=uQQ6ECqMYvwE0aT_" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                loading="lazy">
+              </iframe>
+            </div>
+            <figcaption class="mt-2 text-sm text-gray-600">ทดลองใช้งานแขนกลจริง</figcaption>
+        </figure>
+
         <h3>นักวิทยาศาสตร์พี่เลี้ยง</h3>
 
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-2.webp" alt="รูปรวม" width={500} height={300} />
+            <Image src="/images/jstp/jstp-antenna-rotator-2.webp" alt="รูปรวม" width={300} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <figure>
@@ -135,13 +161,21 @@ import Layout from '../layouts/Layout.astro';
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-4.webp" alt="รูปรวม" width={500} height={300} />
+            <Image src="/images/jstp/jstp-antenna-rotator-4.webp" alt="รูปรวม" width={300} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <p>
             But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
             springing up around the country.
         </p>
+        <figure>
+            <Image src="/images/jstp/jstp-antenna-rotator-7.jpg" alt="รูปรวม" width={500} height={150} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure>
+            <Image src="/images/jstp/jstp-antenna-rotator-6.jpg" alt="รูปรวม" width={300} height={150} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
         <h2>กิจกรรมนำเสนอความก้าวหน้า</h2>
         <p>
             กิจกรรมนำเสนอความก้าวหน้าในโครงการพัฒนาอัจฉริยภาพทางวิทยาศาสตร์สำหรับเด็กและเยาวชน (JSTP) 
