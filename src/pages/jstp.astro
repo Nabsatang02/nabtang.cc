@@ -1,13 +1,30 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+
+//import images
+import header from '../assets/jstp-1.jpg';
+import banner from '../assets/jstp-2.jpg';
+import rotator1 from '../assets/jstp-3.jpg';
+import rotator2 from '../assets/jstp-4.jpg';
+import present1 from '../assets/jstp-5.jpg';
+import present2 from '../assets/jstp-6.jpg';
+import rotator3 from '../assets/jstp-7.jpg';
+import rotator4 from '../assets/jstp-8.webp';
+import rotator5 from '../assets/jstp-9.webp';
+import rotator6 from '../assets/jstp-10.webp';
+import rotator7 from '../assets/jstp-11.jpg';
+import activity1 from '../assets/jstp-12.webp';
+import activity2 from '../assets/jstp-13.jpg';
+import activity3 from '../assets/jstp-14.jpg';
+import activity4 from '../assets/jstp-15.jpg';
 ---
 
 <Layout title="JSTP | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68">
     <div class="prose px-4 md:px-12 lg:px-24 overflow-visible relative">
         <h1>โครงการพัฒนาอัจฉริยภาพทางวิทยาศาสตร์สำหรับเด็กและเยาวชน : Junior Science Talent Project (JSTP) โดย สวทช.</h1>
         <figure>
-            <Image src="/images/jstp/jstp-header.jpg" alt="รูปถ่ายรวม ณ ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน" loading="eager" width={500} height={300} />
+            <Image src={header} alt="รูปถ่ายรวม ณ ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน" loading="eager" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">รูปถ่ายรวม ณ ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน</figcaption>
         </figure>
         <h2>โครงการ JSTP คืออะไร</h2>
@@ -28,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
             คัดเลือกจากกลุ่มแรกปีละประมาณ 7 คน เพื่อรับการสนับสนุนระยะยาวจนสำเร็จการศึกษาระดับปริญญาเอก
         </li>
         <figure>
-            <Image src="/images/jstp/JSTP-02-768x432.jpg" alt="ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566" width={500} height={300} />
+            <Image src={banner} alt="ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566</figcaption>
         </figure>
         <h2>โครงงานของผม</h2>
@@ -75,12 +92,12 @@ import Layout from '../layouts/Layout.astro';
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <figure>
-              <Image src="/images/jstp/jstp-antenna-rotator-1.jpg" alt="รูปรวม" width={300} height={150} />
+              <Image src={rotator1} alt="รูปรวม" width={300} height={150} />
               <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (1)</figcaption>
             </figure>
             
             <figure>
-              <Image src="/images/jstp/jstp-antenna-rotator-5.jpg" alt="รูปรวม" width={300} height={150} />
+              <Image src={rotator2} alt="รูปรวม" width={300} height={150} />
               <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (2)</figcaption>
             </figure>
           </div>          
@@ -153,15 +170,15 @@ import Layout from '../layouts/Layout.astro';
         <h3>นักวิทยาศาสตร์พี่เลี้ยง</h3>
 
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-2.webp" alt="รูปรวม" width={300} height={300} />
+            <Image src={rotator5} alt="รูปรวม" width={300} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-3.webp" alt="รูปรวม" width={500} height={300} />
+            <Image src={rotator6} alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-4.webp" alt="รูปรวม" width={300} height={300} />
+            <Image src={rotator4} alt="รูปรวม" width={300} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <p>
@@ -169,11 +186,11 @@ import Layout from '../layouts/Layout.astro';
             springing up around the country.
         </p>
         <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-7.jpg" alt="รูปรวม" width={500} height={150} />
+            <Image src={rotator7} alt="รูปรวม" width={500} height={150} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
           </figure>
           <figure>
-            <Image src="/images/jstp/jstp-antenna-rotator-6.jpg" alt="รูปรวม" width={300} height={150} />
+            <Image src={rotator3} alt="รูปรวม" width={300} height={150} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
           </figure>
         <h2>กิจกรรมนำเสนอความก้าวหน้า</h2>
@@ -188,7 +205,7 @@ import Layout from '../layouts/Layout.astro';
             และการนำเสนอครั้งสุดท้ายระหว่างวันที่ 12 - 16 พฤษภาคม 2567
         </p>
         <figure>
-            <Image src="/images/jstp/jstp-presenting-1.jpg" alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%" width={500} height={300} />
+            <Image src={present1} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%</figcaption>
         </figure>
         <p>
@@ -197,7 +214,7 @@ import Layout from '../layouts/Layout.astro';
             ฉบับสมบูรณ์ ที่มีผลต่อการคำนวนคะแนนสำหรับแข่งขันได้รับทุน JSTP ระยะยาว (ระดับผู้มีแววอัจฉริยภาพ) ที่จะคัดเลือกเพียงแค่ 1 คนในแต่ละสาขาเท่านั้น
         </p>
         <figure>
-            <Image src="/images/jstp/jstp-presenting-2.jpg" alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%" width={500} height={300} />
+            <Image src={present2} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%</figcaption>
         </figure>
         <h2>กิจกรรมอื่นๆ</h2>
@@ -213,10 +230,10 @@ import Layout from '../layouts/Layout.astro';
             Sed rhoncus neque vel elit dapibus, et mollis justo fermentum.
         </p>
         <figure>
-            <Image src="/images/jstp/jstp-activity-1.webp" alt="รูปรวม" width={500} height={300} />
+            <Image src={activity1} alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
-        <Image src="/images/jstp/jstp-activity-2.jpg" alt="Garlic bread with cheese" width={500} height={300} />
+        <Image src={activity2} alt="Garlic bread with cheese" width={500} height={300} />
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat mollis dui a iaculis. 
             Praesent quis ligula nisi. Suspendisse vel tristique turpis. Nunc in nulla ornare, dapibus lacus et, 
@@ -229,7 +246,7 @@ import Layout from '../layouts/Layout.astro';
             Sed rhoncus neque vel elit dapibus, et mollis justo fermentum.
         </p>
         <figure>
-            <Image src="/images/jstp/jstp-activity-4.jpg" alt="รูปรวม" width={500} height={300} />
+            <Image src={activity4} alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
 
@@ -240,7 +257,7 @@ import Layout from '../layouts/Layout.astro';
 
         <h2>สิ่งที่ได้รับจากโครงการ JSTP</h2>
         <figure>
-            <Image src="/images/jstp/jstp-activity-3.jpg" alt="รูปรวม" width={500} height={300} />
+            <Image src={activity3} alt="รูปรวม" width={500} height={300} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%</figcaption>
         </figure>
         
