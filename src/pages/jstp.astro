@@ -25,6 +25,11 @@ import rotator9 from '../assets/jstp-19.jpg';
 import rotator10 from '../assets/jstp-20.jpg';
 import rotator11 from '../assets/jstp-21.jpg';
 import irondome from '../assets/jstp-22.jpg';
+import gpredict1 from '../assets/jstp-23.png';
+import gpredict2 from '../assets/jstp-24.jpg';
+import rotator12 from '../assets/jstp-25.jpg';
+import rotator13 from '../assets/jstp-26.webp';
+import rotator14 from '../assets/jstp-27.webp';
 ---
 
 <Layout title="JSTP | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68">
@@ -53,8 +58,9 @@ import irondome from '../assets/jstp-22.jpg';
           <li>เพิ่มจำนวนนักวิทยาศาสตร์ นักเทคโนโลยีและนักวิจัยที่มีคุณภาพเป็นที่ยอมรับในระดับประเทศและระดับนานาชาติ</li>
           <li>สร้างกลไกและระบบในการเสาะหา คัดเลือก และบ่มเพาะ ผู้มีความสามารถพิเศษ และผู้มีอัจฉริยภาพ ทางวิทยาศาสร์และเทคโนโลยี ให้มีศักยภาพสูงสุด</li>
         </ol>
-        <figure>
-            <Image src={banner} alt="ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={banner} alt="ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566"
+            widths={[800, banner.width]}  sizes={`(max-width: 768px) 800px, ${banner.width}px`}/>
             <figcaption class="mt-2 text-sm text-gray-600">ประกาศรับสมัครโครงการ JSTP รุ่นที่ 26 ประจำปี พ.ศ. 2566</figcaption>
         </figure>
         <h3>ระดับของโครงการ</h3>
@@ -116,14 +122,14 @@ import irondome from '../assets/jstp-22.jpg';
             เพื่อแก้ไขปัญหาที่กล่าวมาข้างต้น ผมมีความตั้งใจที่จะพัฒนาโครงงานที่เกี่ยวข้องกับการติดตามดาวเทียมในรูปแบบที่สามารถประกอบขึ้นได้เองที่บ้าน โดยใช้วัสดุและอุปกรณ์ที่มีต้นทุนต่ำ
             ลดการนำเข้าอุปกรณ์จากต่างประเทศ สามารถพกพาได้สะดวก และเพิ่มประสิทธิภาพให้ตรงตามเกณฑ์ที่ตั้งไว้ เพื่อให้นำไปใช้งานได้จริงต่อไปในอนาคต
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <figure>
-              <Image src={rotator1} alt="รูปรวม" width={300} />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[650px]">
+            <figure class="lg:max-w-[300px]">
+              <Image src={rotator1} alt="รูปรวม" height={800} />
               <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (1)</figcaption>
             </figure>
             
-            <figure>
-              <Image src={rotator2} alt="รูปรวม" width={300} />
+            <figure class="lg:max-w-[300px]">
+              <Image src={rotator2} alt="รูปรวม" height={800} />
               <figcaption class="mt-2 text-sm text-gray-600">รูปภาพการ Setup แขนกล (2)</figcaption>
             </figure>
           </div>
@@ -140,37 +146,91 @@ import irondome from '../assets/jstp-22.jpg';
           ตัวอย่างที่เด่นชัดคือระบบ Iron Dome ของอิสราเอล ซึ่งเป็นระบบป้องกันภัยทางอากาศที่สามารถตรวจจับและตอบสนองต่อการโจมตีจากขีปนาวุธได้อย่างรวดเร็ว 
           ระบบนี้ไม่เพียงแต่ช่วยปกป้องประชาชนจากภัยคุกคาม แต่ยังแสดงให้เห็นถึงความสำคัญของการติดตามและการควบคุมที่แม่นยำในยุคปัจจุบัน
         </p>
-        <figure class="max-w-[800px]">
-          <Image src={irondome}  alt="Israel's Iron Dome air defense system, Operations Guardian of the Walls, 2021" width={500}/>
+        <figure class="max-w-[400px]">
+          <Image src={irondome}  alt="Israel's Iron Dome air defense system, Operations Guardian of the Walls, 2021" width={800}/>
           <figcaption class="mt-2 text-sm text-gray-600">
             ระบบป้องกันภัยทางอากาศ Iron Dome ของอิสราเอล, ปฏิบัติการ Guardian of the Walls, ปี 2021 <br>
             <a href="https://creativecommons.org/licenses/by-sa/3.0" 
             title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, 
-            <a href="https://commons.wikimedia.org/w/index.php?curid=117478772">รูปภาพจากวิกิพีเดีย</a></figcaption>
+            <a href="https://commons.wikimedia.org/w/index.php?curid=117478772">รูปภาพจากวิกิพีเดีย</a>
+          </figcaption>
         </figure>
         <h3>หลักการทำงานของแขนกล</h3>
         <figure class="max-w-[800px]">
-          <Image src={rotator11} alt="แผนผังของแขนกล"/>
-          <figcaption class="mt-2 text-sm text-gray-600">แผนผังของแขนกล</figcaption>
-        </figure>   
+          <Image src={rotator11} alt="แผนผังการทำงานของแขนกล"/>
+          <figcaption class="mt-2 text-sm text-gray-600">แผนผังการทำงานของแขนกล</figcaption>
+        </figure>
+        <p>
+          กระบวนการทำงานทั้งหมดของแขนกลจะเริ่มต้นที่โปรแกรมติดตามดาวเทียมและควบคุมแขนกลที่ทำงานผ่านคอมพิวเตอร์ 
+          โดยในโครงงานของผมเลือกใช้ <a href="https://oz9aec.dk/gpredict/" target="_blank" class="text-emerald-600" rel="noopener noreferrer">Gpredict</a> 
+          เพราะเป็นซอฟต์แวร์โอเพ่นซอร์สที่ได้รับการพัฒนาอย่างต่อเนื่อง มี User Interface ที่สวยงาม 
+          รองรับการปรับเปลี่ยนตามความต้องการได้หลากหลาย และสามารถทำงานบนระบบปฏิบัติการ Linux ได้
+        </p>
+        <figure class="max-w-[500px]">
+          <Image src={gpredict1} alt="ตัวอย่างภาพหน้าจอของโปรแกรม Gpredict" />
+          <figcaption class="mt-2 text-sm text-gray-600">ตัวอย่างภาพหน้าจอของโปรแกรม Gpredict<br>
+            <a href="https://creativecommons.org/licenses/by-nc/2.0/" 
+            title="Creative Commons NonCommercial 2.0">CC BY-NC 2.0</a>, 
+            <a href="https://oz9aec.dk/gpredict/screenshots.php">รูปภาพจากเว็บไซต์ Gpredict</a>
+          </figcaption>
+        </figure>
+        <p>
+          ตัวโปรแกรมจะทำการดาวน์โหลดชุดข้อมูล Two Line Element (TLE) จากอินเทอร์เน็ต เพื่อใช้ในการคำนวนตำแหน่งดาวเทียมในปัจจุบัน
+          เมื่อดาวเทียมที่เราต้องการติดตามโคจรผ่านบริเวณสถานีที่เราป้อนค่าตำแหน่งเอาไว้ โปรแกรมก็จะทำการประกาศตำแหน่งของดาวเทียมบนท้องฟ้าในหน่วยดีกรี
+          ไปยังระบบเน็ตเวอร์ค ตามที่เราได้ตั้งค่าเอาไว้ในหน้าต่าง Rotator Controller ของโปรแกรม ในที่นี้ผมได้ตั้งให้เป็นไอพีของ localhost พอร์ต 4533
+          เพื่อเชื่อมต่อพูดคุยกับโปรแกรม Hamlib ต่อไป
+        </p>
+        <figure class="max-w-[250px]">
+          <Image src={gpredict2} alt="หน้าต่าง Rotator Controller"/>
+          <figcaption class="mt-2 text-sm text-gray-600">หน้าต่าง Rotator Controller</figcaption>
+        </figure>
+        <p>
+          เมื่อโปรแกรม <a href="https://hamlib.github.io/" target="_blank" class="text-emerald-600" rel="noopener noreferrer">Hamlib</a> ได้รับตำแหน่งดาวเทียมจากโปรแกรม Gpredict แล้ว
+          ตัวโปรแกรมก็จะทำการแปลงรูปแบบการส่งพิกัดใหม่ให้สามารถทำงานร่วมกับบอร์ดควบคุม และทำการส่งข้อมูลแบบ Serial
+          ไปยังพอร์ต COM ที่บอร์ดควบคุมเชื่อมต่อกับคอมพิวเตอร์อยู่ 
+        </p>
+        <p>
+          เมื่อบอร์ดควบคุมรับตำแหน่งของดาวเทียมได้แล้วก็จะทำการขับ Stepper Motor ไปยังตำแหน่งดังกล่าวและรายงานโปรแกรม Gpredict ต่อไป 
+          ในโครงงานนี้ผมได้ดัดแปลงและเลือกใช้ Arduino Uno ร่วมกับ CNC Shield V3 และตัวขับ Stepper Motor A4988 เป็นบอร์ดควบคุมแขนกล
+          <a href="/resources/Satnogs-Rotator-Firmware-FlowChart.svg" 
+          target="_blank" class="text-emerald-600" rel="noopener noreferrer">
+          สามารถดู Flow Chart ของ Firmware บอร์ดควบคุมแขนกลได้ที่นี่</a>
+        </p>
+        <figure class="max-w-[500px]">
+          <Image src={rotator12} alt="อุปกรณ์ประกอบบอร์ดควบคุมแขนกล" width={800}/>
+          <figcaption class="mt-2 text-sm text-gray-600">อุปกรณ์ประกอบบอร์ดควบคุมแขนกล</figcaption>
+        </figure>
+        <p>
+          เมื่อสามารถติดตามดาวเทียมได้แล้ว ก็สามารถติดต่อและรับส่งข้อมูลกับดาวเทียมได้ผ่านสายอากาศ ในครั้งนี้ ผมติดต่อดาวเทียมกิจการวิทยุสมัครเล่น
+          โดยใช้สายอากาศทิศทางยากิ VHF/UHF ที่สามารถส่งและรับได้ 2 ย่านความถี่ และใช้ SDR (Software Defined Radio) ในการประมวลผลข้อมูล
+          ในคอมพิวเตอร์ต่อไป
+        </p>
         <h3>การประกอบแขนกล</h3>
-        <figure>
-          <Image src={rotator8} alt="รูปรวม" width={500} />
+        <figure class="max-w-[500px]">
+          <Image src={rotator13} alt="โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD"/>
+          <figcaption class="mt-2 text-sm text-gray-600">โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD</figcaption>
+        </figure>
+        <figure class="max-w-[500px]">
+          <Image src={rotator14} alt="Stepper Motor ที่ใช้ในแขนกล"/>
+          <figcaption class="mt-2 text-sm text-gray-600">Stepper Motor ที่ใช้ในแขนกล</figcaption>
+        </figure>
+        <figure class="max-w-[500px]">
+          <Image src={rotator8} alt="รูปรวม" width={800} />
           <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
-        <figure>
-          <Image src={rotator9} alt="รูปรวม" width={500} />
+        <figure class="max-w-[500px]">
+          <Image src={rotator9} alt="รูปรวม" width={800} />
           <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>        
         <figure>
-          <Image src={rotator10} alt="CNC Shield V3" width={500} />
-          <figcaption class="mt-2 text-sm text-gray-600">CNC Shield V3</figcaption>
+          <Image src={rotator10} alt="ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3" width={500} />
+          <figcaption class="mt-2 text-sm text-gray-600">ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3</figcaption>
         </figure>        <figure>
           <Image src={rotator2} alt="รูปรวม" width={300} />
           <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
-        <figure>
-          <Image src={rotator3} alt="รูปรวม" width={300} />
+        <figure class="max-w-[500px] sm:max-w-[300px]">
+          <Image src={rotator3} alt="รูปรวม" height={800} />
           <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <h3>การทดสอบแขนกล</h3>
@@ -253,16 +313,16 @@ import irondome from '../assets/jstp-22.jpg';
         <p>
           นักวิทยาศาสตร์พี่เลี้ยงของผมคือ 
         </p>
-        <figure>
-            <Image src={rotator5} alt="รูปรวม" width={300} />
+        <figure class="max-w-[500px] sm:max-w-[300px]">
+            <Image src={rotator5} alt="รูปรวม" height={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <figure>
             <Image src={rotator6} alt="รูปรวม" width={500} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
-        <figure>
-            <Image src={rotator4} alt="รูปรวม" width={300} />
+        <figure class="max-w-[500px] sm:max-w-[300px]">
+            <Image src={rotator4} alt="รูปรวม" height={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
         <p>
@@ -285,8 +345,8 @@ import irondome from '../assets/jstp-22.jpg';
             สำหรับโครงการ JSTP รุ่นที่ 26 ประจำปี 2566 การนำเสนอครั้งแรกจะอยู่ในช่วง 23 - 27 ตุลาคม 2566 
             และการนำเสนอครั้งสุดท้ายระหว่างวันที่ 12 - 16 พฤษภาคม 2567
         </p>
-        <figure>
-            <Image src={present1} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={present1} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 50%</figcaption>
         </figure>
         <p>
@@ -294,8 +354,8 @@ import irondome from '../assets/jstp-22.jpg';
             เมื่อนำเสนอเสร็จก็จะได้คำแนะนำเกี่ยวกับทิศทางของโครงงานจากกรรมการ สำหรับการนำเสนอครั้งที่สองหรือครั้งสุดท้าย จะเป็นการนำเสนอโครงงาน
             ฉบับสมบูรณ์ ที่มีผลต่อการคำนวนคะแนนสำหรับแข่งขันได้รับทุน JSTP ระยะยาว (ระดับผู้มีแววอัจฉริยภาพ) ที่จะคัดเลือกเพียงแค่ 1 คนในแต่ละสาขาเท่านั้น
         </p>
-        <figure>
-            <Image src={present2} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={present2} alt="ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">ระหว่างกิจกรรมนำเสนอความก้าวหน้า 100%</figcaption>
         </figure>
         <h2>กิจกรรมอื่นๆในโครงการ</h2>
@@ -310,16 +370,16 @@ import irondome from '../assets/jstp-22.jpg';
             Suspendisse vel tortor in mauris porta gravida. Integer nec sapien a risus viverra ornare eget et tortor. 
             Sed rhoncus neque vel elit dapibus, et mollis justo fermentum.
         </p>
-        <figure>
-            <Image src={activity1} alt="รูปรวม" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={activity1} alt="รูปรวม" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
-        <figure>
-          <Image src={activity5} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={500} />
+        <figure class="max-w-[500px]">
+          <Image src={activity5} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={800} />
           <figcaption class="mt-2 text-sm text-gray-600">นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP / JSTP-SCB</figcaption>
         </figure>
-        <figure>
-          <Image src={activity6} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={500} />
+        <figure class="max-w-[500px]">
+          <Image src={activity6} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={800} />
           <figcaption class="mt-2 text-sm text-gray-600">นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP / JSTP-SCB</figcaption>
         </figure>
         <Image src={activity2} alt="Garlic bread with cheese" width={500} />
@@ -334,14 +394,14 @@ import irondome from '../assets/jstp-22.jpg';
             Suspendisse vel tortor in mauris porta gravida. Integer nec sapien a risus viverra ornare eget et tortor. 
             Sed rhoncus neque vel elit dapibus, et mollis justo fermentum.
         </p>
-        <figure>
-            <Image src={activity4} alt="รูปรวม" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={activity4} alt="รูปรวม" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
         </figure>
 
         <h2>สิ่งที่ได้รับจากโครงการ JSTP</h2>
-        <figure>
-            <Image src={activity3} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={500} />
+        <figure class="max-w-[500px]">
+            <Image src={activity3} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP / JSTP-SCB</figcaption>
         </figure>
 
