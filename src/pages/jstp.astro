@@ -208,33 +208,39 @@ import rotator16 from '../assets/jstp/jstp-36.jpg';
           ในคอมพิวเตอร์ต่อไป
         </p>
         <h3>การประกอบแขนกล</h3>
-        <figure class="max-w-[500px]">
-          <Image src={rotator13} alt="โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD"/>
-          <figcaption class="mt-2 text-sm text-gray-600">โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={rotator14} alt="Stepper Motor ที่ใช้ในแขนกล"/>
-          <figcaption class="mt-2 text-sm text-gray-600">Stepper Motor ที่ใช้ในแขนกล</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={rotator8} alt="รูปรวม" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={rotator9} alt="รูปรวม" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>        
-        <figure>
-          <Image src={rotator10} alt="ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3" width={500} />
-          <figcaption class="mt-2 text-sm text-gray-600">ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3</figcaption>
-        </figure>        <figure>
-          <Image src={rotator2} alt="รูปรวม" width={300} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure class="max-w-[500px] sm:max-w-[300px]">
-          <Image src={rotator3} alt="รูปรวม" height={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <figure class="max-w-[500px]">
+            <Image src={rotator13} alt="โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD"/>
+            <figcaption class="mt-2 text-sm text-gray-600">โมเดลแขนกลต้นแบบ ในโปรแกรม FreeCAD</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={rotator14} alt="Stepper Motor ที่ใช้ในแขนกล"/>
+            <figcaption class="mt-2 text-sm text-gray-600">Stepper Motor ที่ใช้ในแขนกล</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={rotator8} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={rotator9} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>        
+          <figure class="max-w-[500px]">
+            <Image src={rotator10} alt="ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3" width={500} />
+            <figcaption class="mt-2 text-sm text-gray-600">ทดสอบการหมุนของ Stepper Motor โดยใช้บอร์ด CNC Shield V3</figcaption>
+          </figure>        <figure>
+            <Image src={rotator2} alt="รูปรวม" width={300} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px] sm:max-w-[300px]">
+            <Image src={rotator3} alt="รูปรวม" height={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px] sm:max-w-[300px]">
+            <Image src={rotator16} alt="รูปรวม" height={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+        </div>
         <h3>การทดสอบแขนกล</h3>
         <p>
             สำหรับการทดสอบแขนกลที่ผมได้ประกอบขึ้นมาในโครงงานนี้ จะมีอยู่ 4 การทดสอบด้วยกัน ได้แก่:
@@ -245,10 +251,12 @@ import rotator16 from '../assets/jstp/jstp-36.jpg';
         </p>
 
         <h3>การทดสอบโดยเริ่มจากตำแหน่งสุ่มไปยังตำแหน่งที่ต้องการ</h3>
-        <YouTubePortrait src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
-        description="สาธิตการควบคุมแกน Elevation ของแขนกล"/>
-        <YouTubePortrait src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
-        description="สาธิตการควบคุมแกน Azimuth ของแขนกล"/>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[650px]">
+          <YouTubePortrait src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
+          description="สาธิตการควบคุมแกน Elevation ของแขนกล"/>
+          <YouTubePortrait src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
+          description="สาธิตการควบคุมแกน Azimuth ของแขนกล"/>
+        </div>
 
         <h3>การทดสอบวัดแรงดึงที่แขนกลสามารถทำได้</h3>
         <YouTubePortrait src="https://www.youtube.com/embed/wXKZXVMNWiA?si=zQHYgvGXjHrLC7rk" 
@@ -271,22 +279,31 @@ import rotator16 from '../assets/jstp/jstp-36.jpg';
           ปัจจุบัน บริษัทได้พัฒนาเทคโนโลยีที่ก้าวหน้าอย่างต่อเนื่องเพื่อยกระดับประสิทธิภาพและความทนทานของชิ้นส่วน 
           ทำให้สามารถตอบสนองต่อความต้องการของตลาดอุตสาหกรรมอวกาศระดับสากล
         </p>
-        <figure class="max-w-[500px] sm:max-w-[300px]">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <figure class="max-w-[500px] sm:max-w-[300px]">
             <Image src={rotator5} alt="รูปรวม" height={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure>
-            <Image src={rotator6} alt="รูปรวม" width={500} />
-            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure class="max-w-[500px] sm:max-w-[300px]">
+          </figure>
+          <figure class="max-w-[500px] sm:max-w-[300px]">
             <Image src={rotator4} alt="รูปรวม" height={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={rotator7} alt="รูปรวม" height={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-      </figure>
+          </figure>
+          <figure class="max-w-[500px] sm:max-w-[300px]">
+            <Image src={rotator15} alt="รูปรวม" height={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <figure>
+              <Image src={rotator6} alt="รูปรวม" width={800} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={rotator7} alt="รูปรวม" height={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+        </div>
 
         <h2>กิจกรรมนำเสนอความก้าวหน้า</h2>
         <p>
@@ -322,38 +339,61 @@ import rotator16 from '../assets/jstp/jstp-36.jpg';
         <p>
           ได้ไปทัศนศึกษาที่ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน จังหวัดชลบุรี ทัศนศึกษาที่ศูนย์อนุรักษ์พันธุ์เต่าทะเลและสถาบันวิทยาศาสตร์ทางทะเล พร้อมเข้าฟังบรรยายและร่วมกิจกรรมพัฒนาทักษะด้านการเงินและความสำเร็จจากทีม CSR ธนาคารไทยพาณิชย์
         </p>
-        <figure class="max-w-[500px]">
-          <Image src={activity6} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">กิจกรรมละลายพฤติกรรมหลังจากการนำเสนอ 
-            พร้อมฟังกำหนดการกิจกรรมทัศนศึกษาในวันถัดไป</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={activity1} alt="รูปรวม" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={activity8} alt="ทัศนศึกษา ณ สถาบันวิทยาศาสตร์ทางทะเล มหาวิทยาลัยบูรพา" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">ทัศนศึกษา ณ สถาบันวิทยาศาสตร์ทางทะเล มหาวิทยาลัยบูรพา</figcaption>
-        </figure>
-        <h3>หลังการนำเสนอความก้าวหน้าโครงงาน 100%</h3>
-
-        <figure class="max-w-[500px]">
-          <Image src={activity5} alt="กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี</figcaption>
-        </figure>
-
-        <figure class="max-w-[500px]">
-          <Image src={activity7} alt="ทัศนศึกษาที่ศูนย์อนุรักษ์พันธุ์เต่าทะเลและสถาบันวิทยาศาสตร์ทางทะเล" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">ทัศนศึกษาที่ศูนย์อนุรักษ์พันธุ์เต่าทะเลและสถาบันวิทยาศาสตร์ทางทะเล กองทัพเรือ สัตหีบ จังหวัดชลบุรี</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-          <Image src={activity2} alt="นาน่ารีสอร์ทแก่งกระจาน" width={800} />
-          <figcaption class="mt-2 text-sm text-gray-600">นาน่ารีสอร์ทแก่งกระจาน</figcaption>
-        </figure>
-        <figure class="max-w-[500px]">
-            <Image src={activity4} alt="รูปรวม" width={800} />
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <figure class="max-w-[500px]">
+            <Image src={activity6} alt="นักเรียนทุกคนรับเกียรติบัตรพร้อมกันหลังจากที่จบค่าย JSTP" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">กิจกรรมละลายพฤติกรรมหลังจากการนำเสนอ 
+              พร้อมฟังกำหนดการกิจกรรมทัศนศึกษาในวันถัดไป</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity1} alt="รูปรวม" width={800} />
             <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
-        </figure>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity8} alt="ทัศนศึกษา ณ สถาบันวิทยาศาสตร์ทางทะเล มหาวิทยาลัยบูรพา" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">ทัศนศึกษา ณ สถาบันวิทยาศาสตร์ทางทะเล มหาวิทยาลัยบูรพา</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity7} alt="ทัศนศึกษาที่ศูนย์อนุรักษ์พันธุ์เต่าทะเลและสถาบันวิทยาศาสตร์ทางทะเล" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">ทัศนศึกษาที่ศูนย์อนุรักษ์พันธุ์เต่าทะเลและสถาบันวิทยาศาสตร์ทางทะเล กองทัพเรือ สัตหีบ จังหวัดชลบุรี</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity10} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity9} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+        </div>
+
+        <h3>หลังการนำเสนอความก้าวหน้าโครงงาน 100%</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <figure class="max-w-[500px]">
+            <Image src={activity13} alt="กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity5} alt="กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">กิจกรรมล่องแก่ง ณ อ.แก่งกระจาน จ.เพชรบุรี</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity2} alt="นาน่ารีสอร์ทแก่งกระจาน" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">นาน่ารีสอร์ทแก่งกระจาน</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+              <Image src={activity4} alt="รูปรวม" width={800} />
+              <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity11} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+          <figure class="max-w-[500px]">
+            <Image src={activity12} alt="รูปรวม" width={800} />
+            <figcaption class="mt-2 text-sm text-gray-600">This is a description text below the image.</figcaption>
+          </figure>
+        </div>
 
         <h2>สิ่งที่ได้รับจากโครงการ JSTP</h2>
         <figure class="max-w-[500px]">
