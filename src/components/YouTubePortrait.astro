@@ -1,0 +1,22 @@
+---
+interface Props {
+	src: string;
+	description: string;
+}
+
+const { src, description} = Astro.props;
+---
+
+<figure class="max-w-[260px] w-full">
+	<div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
+	  <iframe class="absolute top-0 left-0 w-full h-full" 
+		src={src} 
+		title="YouTube video player"
+		style="border: none;"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+		loading="lazy">
+	  </iframe>
+	</div>
+	<figcaption class="mt-2 text-sm text-gray-600">{description}</figcaption>
+</figure>
