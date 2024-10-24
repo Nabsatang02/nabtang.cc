@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import YouTubePortrait from '../components/YouTubePortrait.astro';
 
 //import images
 import header from '../assets/jstp-1.jpg';
@@ -87,18 +88,10 @@ import activity10 from '../assets/jstp-31.jpg';
             โครงงานของผมเองทำเกี่ยวกับการประกอบ <strong>แขนกลสำหรับติดตามดาวเทียมกิจการวิทยุสมัครเล่น</strong> ที่จะทำหน้าที่ติดตามดาวเทียม
             ที่โคจรเข้ามาในน่านฟ้าประเทศไทย รวมถึงการทดสอบประสิทธิภาพของแขนกลดังกล่าว ให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
         </p>
-        <figure class="max-w-[260px] w-full">
-            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-              <iframe class="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/NNtLvRwBU8A?si=GEkDEPYENAvl7-Ap" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <figcaption class="mt-2 text-sm text-gray-600">คลิปแนะนำแขนกลเบื้องต้น</figcaption>
-        </figure>
+
+        <YouTubePortrait src="https://www.youtube.com/embed/NNtLvRwBU8A?si=GEkDEPYENAvl7-Ap" 
+        description="คลิปแนะนำแขนกลเบื้องต้น"/>
+        
         <!-- Buttons -->
         <div class="flex space-x-8">
             <!-- Left Column with Buttons -->
@@ -247,71 +240,22 @@ import activity10 from '../assets/jstp-31.jpg';
         </p>
 
         <h3>การทดสอบโดยเริ่มจากตำแหน่งสุ่มไปยังตำแหน่งที่ต้องการ</h3>
-        <figure class="max-w-[260px] w-full">
-            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-              <iframe class="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Elevation ของแขนกล</figcaption>
-        </figure>
-        <figure class="max-w-[260px] w-full">
-            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-              <iframe class="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการควบคุมแกน Azimuth ของแขนกล</figcaption>
-        </figure>
+        <YouTubePortrait src="https://www.youtube.com/embed/4Wigyr9ZIMs?si=lcaXaS3394Y1eeH9" 
+        description="สาธิตการควบคุมแกน Elevation ของแขนกล"/>
+        <YouTubePortrait src="https://www.youtube.com/embed/ECzMzBs-YxQ?si=YUTQLsAHGuUjF590" 
+        description="สาธิตการควบคุมแกน Azimuth ของแขนกล"/>
 
         <h3>การทดสอบวัดแรงดึงที่แขนกลสามารถทำได้</h3>
-        <figure class="max-w-[260px] w-full">
-          <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-            <iframe class="absolute top-0 left-0 w-full h-full" 
-              src="https://www.youtube.com/embed/wXKZXVMNWiA?si=zQHYgvGXjHrLC7rk" 
-              title="YouTube video player" frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-              loading="lazy">
-            </iframe>
-          </div>
-          <figcaption class="mt-2 text-sm text-gray-600">สาธิตการทดสอบวัดแรงดึงที่แขนกลสามารถทำได้</figcaption>
-      </figure>
+        <YouTubePortrait src="https://www.youtube.com/embed/wXKZXVMNWiA?si=zQHYgvGXjHrLC7rk" 
+        description="สาธิตการทดสอบวัดแรงดึงที่แขนกลสามารถทำได้"/>
+
         <h3>ทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น (Homing Test)</h3>
-        <figure class="max-w-[260px] w-full">
-            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-              <iframe class="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/AWzMFxUn6Ek?si=CTutOGwMlkcxRghM" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <figcaption class="mt-2 text-sm text-gray-600">สาธิตการทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น</figcaption>
-        </figure>
+        <YouTubePortrait src="https://www.youtube.com/embed/AWzMFxUn6Ek?si=CTutOGwMlkcxRghM" 
+        description="สาธิตการทดสอบเคลื่อนที่จากจุดใดๆไปยังตำแหน่งเริ่มต้น"/>
 
         <h3>การทดสอบนำไปใช้งานจริงและอ่านค่าสัญญาณที่ได้รับจากดาวเทียม</h3>
-        <figure class="max-w-[260px] w-full">
-            <div class="relative" style="padding-top: 177.78%;"> <!-- 9:16 aspect ratio -->
-              <iframe class="absolute top-0 left-0 w-full h-full" 
-                src="https://www.youtube.com/embed/kdDQrZkj9gA?si=uQQ6ECqMYvwE0aT_" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-                loading="lazy">
-              </iframe>
-            </div>
-            <figcaption class="mt-2 text-sm text-gray-600">ทดลองใช้งานแขนกลจริง</figcaption>
-        </figure>
+        <YouTubePortrait src="https://www.youtube.com/embed/kdDQrZkj9gA?si=uQQ6ECqMYvwE0aT_" 
+        description="ทดลองใช้งานแขนกลจริง"/>
 
         <h3>นักวิทยาศาสตร์พี่เลี้ยง</h3>
         <p>
