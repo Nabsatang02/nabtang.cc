@@ -1,12 +1,148 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+
+//import images
+import thumbnail1 from '../assets/jstp/jstp-14.jpg';
+import thumbnail2 from '../assets/jstp/jstp-10.jpg';
 ---
 
-<Layout title='โครงงาน | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68'>
-    <h1 class="text-center text-xl lg:text-3xl font-bold">ผลงานทั้งหมด</h1>
-    <br>
-    <a href="/jstp">JSTP</a>
-    <br>
-    <br>
-    <a href="/ham">กิจการวิทยุสมัครเล่น</a>
+<Layout title='ผลงาน | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68'>
+    <!-- <section class="relative h-screen w-full"></section> -->
+    <h1 class="text-center text-3xl lg:text-4xl font-bold">ผลงานทั้งหมด</h1>
+
+    <div class="grid grid-cols-3 gap-x-8 gap-y-8 max-md:grid-cols-1 px-4 md:px-8 mt-8">
+        <!-- JSTP -->
+        <article>
+            <a
+                href="/jstp"
+            >
+                <Image
+                    src={thumbnail1}
+                    alt="jstp"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/jstp"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >Junior Science Talent Project (JSTP) โดย สวทช. แขนกลสำหรับติดตามดาวเทียมกิจการวิทยุสมัครเล่น
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                ได้รับการคัดเลือกเป็น 1 ใน 50 คนจากทั่วประเทศ ประกอบแขนกลติดตามดาวเทียม ที่โคจรเข้ามาในน่านฟ้าประเทศไทย 
+                และทดสอบประสิทธิภาพของแขนกลให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
+            </p>
+        
+        </article>
+
+        <!-- Amateur Radio -->
+        <article>
+            <a
+                href="/ham"
+            >
+                <Image
+                    src={thumbnail2}
+                    alt="ham"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/ham"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >รวมสิ่งประดิษฐ์และผลงานของผมที่เกี่ยวข้องกับกิจการวิทยุสมัครเล่น
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                ได้รับการคัดเลือกเป็น 1 ใน 50 คนจากทั่วประเทศ ประกอบแขนกลติดตามดาวเทียม ที่โคจรเข้ามาในน่านฟ้าประเทศไทย 
+                และทดสอบประสิทธิภาพของแขนกลให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
+            </p>
+        
+        </article>
+
+        <!-- Knacksat -->
+        <article>
+            <a
+                href="/ham"
+            >
+                <Image
+                    src={thumbnail2}
+                    alt="ham"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/ham"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >โครงการดาวเทียมเพื่อการศึกษาเรียนรู้ KNACKSAT3 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.)
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                1 ใน 25 คน จากทั่วประเทศ ที่ได้รับคัดเลือกให้เป็นทีมงานพัฒนาดาวเทียม Knacksat 3 
+                ของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.) และได้อยู่ในแผนก Ground Station
+            </p>
+        
+        </article>
+
+        <!-- Formula 1 -->
+        <article>
+            <a
+                href="/ham"
+            >
+                <Image
+                    src={thumbnail1}
+                    alt="ham"
+                    width={800}
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/ham"
+                class="text-2xl text-zinc-900 mb-4 font-semibold inline-block"
+            >OpenRC F1
+            </a>
+        
+            <p class="text-zinc-500 text-xl mb-9 line-clamp-2">
+                "dam yt test"
+            </p>
+        
+        </article>
+
+         <!-- JSTP -->
+         <article>
+            <a
+                href="/jstp"
+            >
+                <Image
+                    src={thumbnail1}
+                    alt="jstp"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/jstp"
+                class="text-2xl text-zinc-900 mb-4 font-semibold inline-block"
+            >Junior Science Talent Project (JSTP) โดย สวทช.
+            </a>
+        
+            <p class="text-zinc-500 text-xl mb-9 line-clamp-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus leo. Proin feugiat porttitor tortor non vehicula. Donec vestibulum lacus erat, ut posuere ex fringilla sed. Curabitur id ex dictum, consequat neque eu, eleifend purus. Ut faucibus sapien quis nulla aliquet sodales. Integer vitae metus nec lectus finibus interdum. Aenean imperdiet consequat nibh, ac euismod odio rhoncus dapibus. Maecenas in vulputate mi, eget convallis dui.
+
+            </p>
+        
+        </article>
+    </div>
 </Layout>
