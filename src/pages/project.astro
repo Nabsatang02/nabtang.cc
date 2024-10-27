@@ -4,14 +4,20 @@ import Layout from '../layouts/Layout.astro';
 
 //import images
 import thumbnail1 from '../assets/jstp/jstp-14.jpg';
-import thumbnail2 from '../assets/jstp/jstp-10.jpg';
+import thumbnail2 from '../assets/ham/ham-6.jpg';
+import thumbnail3 from '../assets/jstp/jstp-11.jpg';
+import thumbnail4 from '../assets/f1/f1-1.jpg';
+import thumbnail5 from '../assets/is/is-3.jpg';
+import thumbnail6 from '../assets/ham/ham-4.jpg';
+import thumbnail7 from '../assets/ham/ham-2.jpg';
+import thumbnail8 from '../assets/ham/dca-5.jpg';
+import thumbnail9 from '../assets/ham/trx-1.jpg';
 ---
 
 <Layout title='ผลงาน | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68'>
     <!-- <section class="relative h-screen w-full"></section> -->
     <h1 class="text-center text-3xl lg:text-4xl font-bold">ผลงานทั้งหมด</h1>
-
-    <div class="grid grid-cols-3 gap-x-8 gap-y-8 max-md:grid-cols-1 px-4 md:px-8 mt-8">
+    <div class="grid grid-cols-3 gap-x-8 gap-y-8 max-md:grid-cols-1 max-lg:grid-cols-2 px-4 md:px-8 mt-8">
         <!-- JSTP -->
         <article>
             <a
@@ -60,8 +66,8 @@ import thumbnail2 from '../assets/jstp/jstp-10.jpg';
             </a>
         
             <p class="text-zinc-500 text-l mb-9 line-clamp-2">
-                ได้รับการคัดเลือกเป็น 1 ใน 50 คนจากทั่วประเทศ ประกอบแขนกลติดตามดาวเทียม ที่โคจรเข้ามาในน่านฟ้าประเทศไทย 
-                และทดสอบประสิทธิภาพของแขนกลให้อยู่ในเกณฑ์ที่จะสามารถนำไปใช้งานได้จริงต่อไปในอนาคต
+                นักวิทยุสมัครเล่นมีความเกี่ยวข้องกับวิศวกรรมหลายด้าน เช่น วิศวกรรมเครื่องกล วิศวกรรมไฟฟ้า อิเล็กทรอนิกส์ และคอมพิวเตอร์ 
+                โดยต้องมีทักษะในการออกแบบและการสร้างอยู่ทั้งด้านเครื่องกล และไฟฟ้า การสร้างและปรับปรุงเสาอากาศ และการใช้งานซอฟต์แวร์สื่อสารต่าง ๆ 
             </p>
         
         </article>
@@ -72,7 +78,7 @@ import thumbnail2 from '../assets/jstp/jstp-10.jpg';
                 href="/ham"
             >
                 <Image
-                    src={thumbnail2}
+                    src={thumbnail3}
                     alt="ham"
                     width={800}
                     loading="eager"
@@ -93,39 +99,14 @@ import thumbnail2 from '../assets/jstp/jstp-10.jpg';
         
         </article>
 
-        <!-- Formula 1 -->
-        <article>
-            <a
-                href="/ham"
-            >
-                <Image
-                    src={thumbnail1}
-                    alt="ham"
-                    width={800}
-                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
-                />
-            </a>
-        
-            <a
-                href="/ham"
-                class="text-2xl text-zinc-900 mb-4 font-semibold inline-block"
-            >OpenRC F1
-            </a>
-        
-            <p class="text-zinc-500 text-xl mb-9 line-clamp-2">
-                "dam yt test"
-            </p>
-        
-        </article>
-
-         <!-- JSTP -->
+         <!-- IS -->
          <article>
             <a
-                href="/jstp"
+                href="/projects/is"
             >
                 <Image
-                    src={thumbnail1}
-                    alt="jstp"
+                    src={thumbnail5}
+                    alt="is"
                     width={800}
                     loading="eager"
                     class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
@@ -133,16 +114,154 @@ import thumbnail2 from '../assets/jstp/jstp-10.jpg';
             </a>
         
             <a
-                href="/jstp"
-                class="text-2xl text-zinc-900 mb-4 font-semibold inline-block"
-            >Junior Science Talent Project (JSTP) โดย สวทช.
+                href="/projects/is"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >การนำเสนอผลงานวิจัยหัวข้อ “Relationship between Smartphones and Insomnia”
             </a>
         
-            <p class="text-zinc-500 text-xl mb-9 line-clamp-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a purus leo. Proin feugiat porttitor tortor non vehicula. Donec vestibulum lacus erat, ut posuere ex fringilla sed. Curabitur id ex dictum, consequat neque eu, eleifend purus. Ut faucibus sapien quis nulla aliquet sodales. Integer vitae metus nec lectus finibus interdum. Aenean imperdiet consequat nibh, ac euismod odio rhoncus dapibus. Maecenas in vulputate mi, eget convallis dui.
-
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                ได้รับรางวัลชนะเลิศ และได้รับโอกาสในการตีพิมพ์ในวารสารวิจัยของมหาวิทยาลัยมหิดล 
+                โดยงานวิจัยนี้ มุ่งเน้นการศึกษาความสัมพันธ์ระหว่างการใช้งานสมาร์ทโฟนและปัญหาการนอนไม่หลับ 
+                ผ่านการแจกแบบสอบถามออนไลน์ให้กับกลุ่มตัวอย่าง
             </p>
         
         </article>
+
+         <!-- Ham License -->
+         <article>
+            <a
+                href="/projects/is"
+            >
+                <Image
+                    src={thumbnail6}
+                    alt="is"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/projects/is"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >ได้รับใบประกาศนียบัตรนักวิทยุสมัครเล่นขั้นต้น กลาง สูง และมีใบอนุญาตให้ออกอากาศ
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                มุ่งมั่นสอบใบอนุญาตวิทยุสมัครเล่นขั้นต้นเมื่ออายุ 15 ปี หลังจากนั้น ได้สอบผ่าน FCC Amateur Radio License ARRL VEC 
+                Examination (US Exam) ขั้น Technician, General และ Extra ซึ่งเป็นขั้นที่สูงที่สุด
+            </p>
+        
+        </article>
+
+         <!-- Formula 1 -->
+         <article>
+            <a
+                href="/projects/f1"
+            >
+                <Image
+                    src={thumbnail4}
+                    alt="f1"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/projects/f1"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >การนำเสนอผลงานวิจัยหัวข้อ “Relationship between Smartphones and Insomnia”
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                ได้รับรางวัลชนะเลิศ และได้รับโอกาสในการตีพิมพ์ในวารสารวิจัยของมหาวิทยาลัยมหิดล 
+                โดยงานวิจัยนี้ มุ่งเน้นการศึกษาความสัมพันธ์ระหว่างการใช้งานสมาร์ทโฟนและปัญหาการนอนไม่หลับ 
+                ผ่านการแจกแบบสอบถามออนไลน์ให้กับกลุ่มตัวอย่าง
+            </p>
+        
+        </article>
+
+         <!-- ISS Repeater -->
+         <article>
+            <a
+                href="/projects/f1"
+            >
+                <Image
+                    src={thumbnail7}
+                    alt="f1"
+                    width={800}
+                    loading="eager"
+                    class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+                />
+            </a>
+        
+            <a
+                href="/projects/f1"
+                class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+            >ติดต่อกับนักวิทยุสมัครเล่น ผ่านสถานีทวนสัญญานบนสถานีอวกาศนานาชาติ(ISS)
+            </a>
+        
+            <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+                ได้รับรางวัลชนะเลิศ และได้รับโอกาสในการตีพิมพ์ในวารสารวิจัยของมหาวิทยาลัยมหิดล 
+                โดยงานวิจัยนี้ มุ่งเน้นการศึกษาความสัมพันธ์ระหว่างการใช้งานสมาร์ทโฟนและปัญหาการนอนไม่หลับ 
+                ผ่านการแจกแบบสอบถามออนไลน์ให้กับกลุ่มตัวอย่าง
+            </p>
+        
+        </article>
+        <!-- DCA -->
+        <article>
+           <a
+               href="/projects/f1"
+           >
+               <Image
+                   src={thumbnail8}
+                   alt="f1"
+                   width={800}
+                   loading="eager"
+                   class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+               />
+           </a>
+       
+           <a
+               href="/projects/f1"
+               class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+           >การนำเสนอผลงานวิจัยหัวข้อ “Relationship between Smartphones and Insomnia”
+           </a>
+       
+           <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+               ได้รับรางวัลชนะเลิศ และได้รับโอกาสในการตีพิมพ์ในวารสารวิจัยของมหาวิทยาลัยมหิดล 
+               โดยงานวิจัยนี้ มุ่งเน้นการศึกษาความสัมพันธ์ระหว่างการใช้งานสมาร์ทโฟนและปัญหาการนอนไม่หลับ 
+               ผ่านการแจกแบบสอบถามออนไลน์ให้กับกลุ่มตัวอย่าง
+           </p>
+       
+       </article>
+       <!-- Formula 1 -->
+       <article>
+          <a
+              href="/projects/f1"
+          >
+              <Image
+                  src={thumbnail9}
+                  alt="f1"
+                  width={800}
+                  loading="eager"
+                  class="rounded-2xl shadow-xl mb-6 aspect-thumbnail object-cover"
+              />
+          </a>
+      
+          <a
+              href="/projects/f1"
+              class="text-2xl text-zinc-900 mb-4 font-semibold line-clamp-2"
+          >การนำเสนอผลงานวิจัยหัวข้อ “Relationship between Smartphones and Insomnia”
+          </a>
+      
+          <p class="text-zinc-500 text-l mb-9 line-clamp-2">
+              ได้รับรางวัลชนะเลิศ และได้รับโอกาสในการตีพิมพ์ในวารสารวิจัยของมหาวิทยาลัยมหิดล 
+              โดยงานวิจัยนี้ มุ่งเน้นการศึกษาความสัมพันธ์ระหว่างการใช้งานสมาร์ทโฟนและปัญหาการนอนไม่หลับ 
+              ผ่านการแจกแบบสอบถามออนไลน์ให้กับกลุ่มตัวอย่าง
+          </p>
+      
+      </article>
     </div>
 </Layout>
