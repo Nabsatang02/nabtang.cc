@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 
 //import images
-import header from '../assets/ham/ham-1.jpg';
+import header from '../assets/ham/ham-5.jpg';
 ---
 
 <Layout title='กิจการวิทยุสมัครเล่น | nabtang.cc เว็บไซต์ Portfolio ออนไลน์ Dek68'>
@@ -18,12 +18,15 @@ import header from '../assets/ham/ham-1.jpg';
             ซึ่งจะเป็นประโยชน์ในการต่อยอดความรู้ในด้านวิศวกรรมและการสื่อสารผ่านดาวเทียม 
             รวมถึงการนำองค์ความรู้ที่ได้จาาการทำโครงงานต่างไปประยุกต์ใช้ในอุตสาหกรรมอื่นๆในอนาคตได้อีกด้วย
         </p>
-        <figure>
-            <Image src={header} alt="รูปถ่ายรวม ณ ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน" loading="eager"/>
-            <figcaption class="mt-2 text-sm text-gray-600">รูปถ่ายรวม ณ ศูนย์ฝึกอบรมธนาคารไทยพาณิชย์ หาดตะวันรอน</figcaption>
+        <figure class="max-w-[300px]">
+            <Image src={header} alt="ขณะทำการออกอากาศจากเครื่องวิทยุสื่อสาร" loading="eager" height={800}/>
+            <figcaption class="mt-2 text-sm text-gray-600">ขณะทำการออกอากาศจากเครื่องวิทยุสื่อสาร</figcaption>
         </figure>
         <h2>ผมกับกิจการวิทยุสมัครเล่น</h2>
-        <a>อ่านเพิ่มเติมีที่</a>
+        <p>
+            ผมมีความผูกพันกับกิจการวิทยุสมัครเล่นมาตั้งแต่เด็ก ในสมัยก่อน คุณพ่อของผมมักจะหยิบเครื่องวิทยุสื่อสารของท่านมาให้ลองจับ และสาธิตการออกอากาศให้ผมดู
+            ตั้งแต่นั้นมาผมก็สนใจกับกิจการวิทยุสมัครเล่นเป็นพิเศษ และทำการสอบวิทยุขั้นต้นในวัย 15 ปี <a href="/posts/ham" class="text-emerald-600">อ่านเพิ่มเติม</a>
+        </p>
         <h2>รวมสิ่งประดิษฐ์และผลงานของผมที่เกี่ยวข้องกับกิจการวิทยุสมัครเล่น</h2>
     </div>
 </Layout>
