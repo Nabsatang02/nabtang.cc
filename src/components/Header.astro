@@ -2,44 +2,54 @@
 
 ---
 
-<header class="header flex justify-between items-center border-b border-gray-300 px-24 py-5 max-sm:px-5 max-sm:w-full h-[80px]">
+<header class="flex justify-between items-center border-b border-gray-300 px-24 py-5 max-sm:px-5 max-sm:w-full h-[80px]">
     <a href="/" class="flex gap-x-4 items-center">
-        <img src="/logo/nabtang-cc.svg" alt="website logo" class="w-[12rem] max-sm:w-[8rem] h-auto" loading="eager"/>
+        <img
+            src="/logo/nabtang-cc.svg"
+            alt="website logo"
+            class="w-[12rem] max-sm:w-[8rem] h-auto"
+            loading="eager"
+        />
     </a>
 
-    <!-- Hamburger Menu Icon (visible on mobile) -->
-    <button id="hamburger" class="block sm:hidden" aria-label="Open menu">
-        <svg class="w-8 h-8 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-    </button>
+<!-- Hamburger Menu Icon (visible on mobile) -->
+<button id="hamburger" class="block sm:hidden" aria-label="Open menu">
+    <svg
+        class="w-8 h-8 text-gray-800"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+        ></path>
+    </svg>
+</button>
 
-    <!-- Navigation Menu (hidden by default on mobile) -->
-    <nav id="nav-menu" class="hidden sm:flex gap-x-8">
-        <ul class="flex gap-x-8">
-            <li><a href="#project" class="text-teal-900 font-bold hover:underline">ผลงาน</a></li>
-            <li><a href="#blog" class="text-teal-900 font-bold hover:underline">บทความ</a></li>
-            <li><a href="#about" class="text-teal-900 font-bold hover:underline">เกี่ยวกับ</a></li>
-        </ul>
-    </nav>
+<!-- Navigation Menu (hidden by default on mobile) -->
+<nav id="nav-menu" class="hidden sm:flex gap-x-8">
+    <ul class="flex gap-x-8">
+        <li><a href="/project" class="text-teal-900 font-bold hover:underline">ผลงาน</a></li>
+        <li><a href="/blog" class="text-teal-900 font-bold hover:underline">บทความ</a></li>
+        <li><a href="/about" class="text-teal-900 font-bold hover:underline">เกี่ยวกับ</a></li>
+    </ul>
+</nav>
+
 </header>
 
 <!-- Mobile Menu (hidden by default, shown on mobile when hamburger is clicked) -->
 <nav id="mobile-menu" class="sm:hidden hidden flex flex-col absolute bg-gray-100 z-50 w-full gap-4 px-6 py-4">
     <ul class="flex flex-col gap-4 ">
         <li><a href="/" class="text-teal-900 font-bold">หน้าหลัก</a></li>
-        <li><a href="#project" class="text-teal-900 font-bold">ผลงาน</a></li>
-        <li><a href="#blog" class="text-teal-900 font-bold">บทความ</a></li>
-        <li><a href="#about" class="text-teal-900 font-bold">เกี่ยวกับ</a></li>
+        <li><a href="/project" class="text-teal-900 font-bold">ผลงาน</a></li>
+        <li><a href="/blog" class="text-teal-900 font-bold">บทความ</a></li>
+        <li><a href="/about" class="text-teal-900 font-bold">เกี่ยวกับ</a></li>
     </ul>
 </nav>
-
-<div class="mb-8"></div>
-
-<!-- Scroll Sections -->
-<section id="project"></section>
-<section id="blog"></section>
-<section id="about"></section>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -52,47 +62,5 @@
             });
         }
     });
-
-    let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('header nav a');
-    let header = document.querySelector('.header');
-
-    window.onscroll = () => {
-        // Sticky Navbar
-        header.classList.toggle('sticky', window.scrollY > 100);
-
-        // Scroll Section Active Link
-        sections.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-
-            if(top >= offset && top < offset + height) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-                });
-            }
-        });
-    };
 </script>
-
-<style>
-    /* Add a sticky class for when the header sticks */
-    .header.sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1000;
-        background-color: rgba(255, 255, 255, 0.8); /* Translucent background */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for contrast */
-        backdrop-filter: blur(8px); /* Adds a blur effect for readability */
-    }
-
-    /* Style the active link */
-    .active {
-        color: red; /* Change to your desired active color */
-    }
-</style>
+<div class="mb-8"></div>
