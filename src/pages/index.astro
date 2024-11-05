@@ -1,4 +1,5 @@
 ---
+import AboutMe from '../components/AboutMe.astro';
 import AstroPerformance from '../components/AstroPerformance.astro';
 import BlogCard from '../components/BlogCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
@@ -28,7 +29,7 @@ import '../styles/typing.css';
 
 		<!-- Quote -->
 		<blockquote>
-			<p class="typing-demo">การแข่งขันอาจจบลง แต่ประสบการณ์นั้นคงอยู่</p>
+			<p class="typing-demo max-w-full">การแข่งขันอาจจบลง แต่ประสบการณ์นั้นคงอยู่</p>
 			<footer><cite>– แชทจีพีที 4o mini, มีแรงบันดาลใจมาจากคุณพ่อ</cite></footer>
 		</blockquote>
 
@@ -45,7 +46,7 @@ import '../styles/typing.css';
 		<h2 class="mt-20 md:mt-24 lg:mt-28 xl:mt-36 font-heading text-2xl lg:text-3xl text-black text-balance"><strong>เกียรติบัตร</strong></h2>
 
 		<!-- About Me -->
-		<h2 class="mt-20 md:mt-24 lg:mt-28 xl:mt-36 font-heading text-2xl lg:text-3xl text-black text-balance"><strong>เกี่ยวกับฉัน</strong></h2>
+		<AboutMe />
 
 		<!-- Contact -->
 		<div class="my-10 text-gray-600 font-serif text-center">
